@@ -1,5 +1,7 @@
 create schema `companion`;
 
+use companion;
+
 create table calendar(
 	id integer not null auto_increment primary key,
     title varchar(45),
