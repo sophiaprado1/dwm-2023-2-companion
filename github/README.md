@@ -226,3 +226,124 @@ Olá, me chamo Caio e sou estudante de Ciência da Computação, gostaria de uma
 
 ![image](https://github.com/LuFi-1227/dwm-2023-2-companion/assets/129668645/c6ed1daa-d656-47ca-8521-ba07347391de)
 
+>================================================================================
+## RF06: - Exibir calendário de eventos - @LuFi-1227
+
+### Autor: @LuFi-1227
+
+## Revisor: @revisor
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Exibe um calendário interativo com os eventos que ocorrerão na UFT, sendo eles referentes à alunos ou servidores.
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Calendário";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Calendário", da tela inicial;
+3. O ator consegue vizualizar e interagir com um calendário que especifica os eventos que vão ocorrer na UFT;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| Evento temporário | não | sim | Texto |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Passar para o próximo | O ator pode mudar a vizualização do mês, dia ou semana de vizualização para o futuro | botão |
+| Passar para o anterior | O ator pode mudar a vizualização do mês, dia ou semana de vizualização para o passado | botão |
+| Escolher Mês | O ator pode escolher o mês no qual deseja visualizar os eventos | botão do calendário |
+| Expandir Semana | O ator pode expandir a semana na qual deseja vizualizar os eventos | botão do calendário  |
+| Escolher Dia | O ator pode expandir o dia no qual deseja vizualizar os eventos | botão do calendário  |
+| Adicionar evento| O ator pode adicionar um evento temporário ao calendário | botão do calendário  |
+| Remover evento| O ator pode remover um evento de forma temporária do calendário | botão do calendário  |
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá, me chamo Henrique e sou estudante de Ciência da Computação, gostaria de um calendário de eventos interativo no qual eu posso adicionar ou remover eventos, mesmo que de forma temporária, para organização do meu tempo. Também gostaria de ver os eventos futuros do calendário, como feriados, e as datas dos inícios e fins dos períodos de trancamentos e de entregas de documentos em uma tela com bom design e que não seja mais uma forma de ficar cansado com tantas informações.
+```
+### Telas
+**Tela Mobile**
+
+>================================================================================
+## RF07: - Exibir Manual do Aluno - @LuFi-1227
+
+### Autor: @LuFi-1227
+
+## Revisor: @revisor
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Exibe um documento de texto chamado de manual do aluno, que serve para os calouros de Ciência da Computação se adaptarem melhor ao curso.
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Manual do Aluno";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Manual do Aluno" da tela inicial;
+3. O ator consegue visualizar o manual do aluno em sua tela;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+| Fazer download | O ator pode fazer download do manual do aluno | botão |
+| Alterar zoom | O ator pode alterar o zoom no manual do aluno | botão |
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá, me chamo Carlos e sou calouro de Ciência da Computação, gostaria de uma tela na qual eu pudesse ler um documento que contivesse infiormações confiáveis sobre o curso no qual estou começando, tenho problemas visuais e por isto gostaria de conseguir alterar o zoom do documento nesta página e, se possível, fazer download dele no meu celular de forma fácil. 
+```
+### Telas
+**Tela Mobile**
