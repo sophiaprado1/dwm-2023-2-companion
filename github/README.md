@@ -226,3 +226,84 @@ Olá, me chamo Caio e sou estudante de Ciência da Computação, gostaria de uma
 
 ![image](https://github.com/LuFi-1227/dwm-2023-2-companion/assets/129668645/c6ed1daa-d656-47ca-8521-ba07347391de)
 
+## RF08: Redirecionar para o espaço do aluno - @rafaeld74
+
+### Autor: @rafaeld74
+
+## Revisor: @revisor
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+um botão quredireciona o usuario para a pagina do aluno no site da UFT
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Espaço do Aluno";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Espaço do Aluno" da tela inicial;
+3. O ator e re direcionado a pagina do aluno no site da UFT;
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Redirecionar| O usuario clica um botão que o redireciona a pagina da UFT  | Botão |
+
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá me chamo Armano faço ciecia da computação porem eu já tenho 67 anos e tenho dificuldade com a UI da site da UFT e gostaria de ter algum botão de facil acesso que me permetiria ser direcionado diretamente para a pagina do aluno no site da UFT para facilitar o meu acesso.
+```
+
+## RF09: Editar informações e links do aplicativo - @rafaeld74
+
+### Autor: @rafaeld74
+
+## Revisor: @revisor
+
+### Atores:
+
+> Administrador - Acesso à edição das informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+A abilidade de alterar as informações e links presentes no aplicativo.
+
+### Pré-Condição:
+
+Estar logado como Administrador e esta na pagina que deseja fazer alterações.
+
+### Fluxo Principal:
+
+1. O autor deve logar na pagina como administrador.
+2. O autor entra na pagina que ele deseja alterar.
+3. O altor clica no botão que permite que as informaçoes sejam alteradas nessa pagina.
+4. O altor salva suas alteraçoes clicando no botão salvar.
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Editar | O usuario clica um botão para liberar a edição da tela | Botão |
+| Salvar | O usuario clica um botão que | Botão |
+| Salvar | O usuario clica um botão que | Botão |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Ola meu nome e Jonas e eu sou um administrador do aplicativo e gostaria de poder ter a opção de facilmente alterar os links e as informaçoes presentes no site para garantir que todas estajam atualizadas.
+```
