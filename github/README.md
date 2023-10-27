@@ -12,6 +12,7 @@ DISCENTES: (Ordem Alfabética)
 > Rafael de Oliveira Ribeiro - Backend
 > Murilo Estêvão Passos - Backend
 ```
+
 # dwm-2023-2-bender
 Repositório do projeto Bender 2.0 (Companion), como parte da disciplina Desenvolvimento Web Mobile, ministrada pelo professor Marcelo Ribeiro, no período 2023.2.
 
@@ -30,8 +31,8 @@ Repositório do projeto Bender 2.0 (Companion), como parte da disciplina Desenvo
 >- *RF05*: - Exibir fluxogramas - @rafaeld74
 >- *RF06*: - Exibir calendário de eventos - @LuFi-1227
 >- *RF07*: - Exibir Manual do Aluno - @LuFi-1227
->- *RF08*: - Redirecionar para o espaço do aluno - @author
->- *RF09*: - Editar informações e links do aplicativo - @author
+>- *RF08*: - Redirecionar para o espaço do aluno - @MuPassos
+>- *RF09*: - Editar informações e links do aplicativo - @MuPassos
 
 *Substituir "author" ou "revisor" pelo seu nick do GitHub, a depender de sua função*
 *### Atores:
@@ -225,6 +226,122 @@ Olá, me chamo Caio e sou estudante de Ciência da Computação, gostaria de uma
 **Tela Mobile**
 
 ![image](https://github.com/LuFi-1227/dwm-2023-2-companion/assets/129668645/c6ed1daa-d656-47ca-8521-ba07347391de)
+
+>================================================================================
+## RF04: - Exibir estatutos - @MuPassos
+
+### Autor: @MuPassos
+
+## Revisor: @LuFi-1227
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+É uma página, chamada links úteis, que exibe os estatutos e documentos da UFT.
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Links úteis";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Links úteis" da tela inicial;
+3. O ator é redirecionado à página do site onde ficam presentes os estatutos;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+| Escolher Link | O ator pode escolher o link desejado | Clique |
+| Barra de buscas | O ator pode escolher procurar pelo link desejado através da barra de buscas | Clique |
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Oi, me chamo Murilo e entrei no curso há algum tempo. Gostaria de saber onde consigo achar os estatutos da universidade, já que pelo site é de extrema dificuldade de encontrá-los no site da UFT e portanto, gostaria de acessá-lo de forma mais fácil, já que nunca encontrei eles em nenhum momento da minha vida acadêmica.  
+```
+### Telas
+**Tela Mobile**
+
+>================================================================================
+## RF05: - Exibir Fluxogramas - @MuPassos
+
+### Autor: @MuPassos
+
+## Revisor: @LuFi-1227
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Exibe o fluxograma atualizado com a grade curricular do curso de Ciência da Computação;
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Fluxograma";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Fluxograma" da tela inicial;
+3. O ator consegue ter acesso ao fluxograma do curso de Ciência da Computação atualizado;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá, meu nome é Jorel e estou no segundo período do curso. Estava tendo dificuldades em encontrar o fluxograma com as matérias e os pré-requisitos delas, a fim de montar a minha grade e solicitá-la no portal do aluno. Seria muito mais fácil e prático se eu pudesse acessar esse fluxograma com um "clique" para as próximas vezes em que eu for montar a minha grade do período para os períodos seguintes.
+```
+### Telas
+**Tela Mobile**
 
 >================================================================================
 ## RF06: - Exibir calendário de eventos - @LuFi-1227
