@@ -5,7 +5,7 @@
 - [Antonio André Barcelos Chagas](https://github.com/andrebarceloschagas) - OP
 - [Luiz Filipe de Souza Alves](https://github.com/LuFi-1227) - OP
 - [Victor Emanuel da Silva Campelo](https://github.com/Victorcampelo14) - Frontend
-- [Maria Herminia Okuendo](https://github.com/offmatt) - Frontend
+- [Maria Herminia da Silva Rodriguez Oquendo](https://github.com/offmatt) - Frontend
 - [Rafael de Oliveira Ribeiro](https://github.com/rafaeld74) - Backend
 - [Murilo Estêvão Passos](https://github.com/) - Backend
 
