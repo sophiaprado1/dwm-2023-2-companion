@@ -226,3 +226,119 @@ Olá, me chamo Caio e sou estudante de Ciência da Computação, gostaria de uma
 
 ![image](https://github.com/LuFi-1227/dwm-2023-2-companion/assets/129668645/c6ed1daa-d656-47ca-8521-ba07347391de)
 
+## RF04: - Exibir estatutos - @MuPassos
+
+### Autor: @MuPassos
+
+## Revisor: @revisor
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Apresenta um botão com link para redirecionamento à página do site da UFT onde ficam presentes os estatutos;
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Links úteis";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Links úteis" da tela inicial;
+3. O ator é redirecionado à página do site da UFT onde ficam presentes os estatutos;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+| Escolher Link | O ator pode escolher o link desejado | Clique |
+| Barra de buscas | O ator pode escolher procurar pelo link desejado através da barra de buscas | Clique |
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Oi, boa tarde! Me chamo Malva e entrei no curso há pouco tempo. Gostaria de saber onde consigo achar os estatutos da universidade, já que pelo site é de extrema dificuldade de encontrá-los... (fora do story telling isso é um caso real que eu - Murilo - estou passando ao fazer essa documentação, até então eu não sei onde ficam esses estatutos)
+```
+### Telas
+**Tela Mobile**
+
+
+>================================================================================
+## RF05: - Exibir Fluxogramas - @MuPassos
+
+### Autor: @MuPassos
+
+## Revisor: @revisor
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Exibe o fluxograma atualizado com a grade curricular do curso de Ciência da Computação;
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Fluxograma";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Fluxograma" da tela inicial;
+3. O ator consegue ter acesso ao fluxograma do curso de Ciência da Computação atualizado;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá, meu nome é Jorel e estou no segundo período do curso. Estava tendo dificuldades em encontrar o fluxograma com as matérias e os pré-requisitos delas, a fim de montar a minha grade e solicitá-la no portal do aluno. Seria muito mais fácil e prático se eu pudesse acessar esse fluxograma com um "clique" para as próximas vezes em que eu for montar a minha grade do período para os períodos seguintes.
+```
+### Telas
+**Tela Mobile**
+
