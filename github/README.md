@@ -26,10 +26,10 @@ Repositório do projeto Bender 2.0 (Companion), como parte da disciplina Desenvo
 >- *RF01*: - Exibir tela principal - @LuFi-1227
 >- *RF02*: - Exibir horários de aula - @LuFi-1227
 >- *RF03*: - Exibir contatos importantes - @LuFi-1227
->- *RF04*: - Exibir estatutos - @author
->- *RF05*: - Exibir fluxogramas - @author
->- *RF06*: - Exibir calendário de eventos - @author
->- *RF07*: - Exibir Manual do Aluno - @author
+>- *RF04*: - Exibir estatutos - @rafaeld74
+>- *RF05*: - Exibir fluxogramas - @rafaeld74
+>- *RF06*: - Exibir calendário de eventos - @LuFi-1227
+>- *RF07*: - Exibir Manual do Aluno - @LuFi-1227
 >- *RF08*: - Redirecionar para o espaço do aluno - @author
 >- *RF09*: - Editar informações e links do aplicativo - @author
 
@@ -226,9 +226,10 @@ Olá, me chamo Caio e sou estudante de Ciência da Computação, gostaria de uma
 
 ![image](https://github.com/LuFi-1227/dwm-2023-2-companion/assets/129668645/c6ed1daa-d656-47ca-8521-ba07347391de)
 
-## RF08: Redirecionar para o espaço do aluno - @rafaeld74
+>================================================================================
+## RF06: - Exibir calendário de eventos - @LuFi-1227
 
-### Autor: @rafaeld74
+### Autor: @LuFi-1227
 
 ## Revisor: @revisor
 
@@ -238,7 +239,129 @@ Olá, me chamo Caio e sou estudante de Ciência da Computação, gostaria de uma
 
 ### Descrição Sucinta:
 
-um botão quredireciona o usuario para a pagina do aluno no site da UFT
+Exibe um calendário interativo com os eventos que ocorrerão na UFT, sendo eles referentes à alunos ou servidores.
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Calendário";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Calendário", da tela inicial;
+3. O ator consegue vizualizar e interagir com um calendário que especifica os eventos que vão ocorrer na UFT;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| Evento temporário | não | sim | Texto |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Passar para o próximo | O ator pode mudar a vizualização do mês, dia ou semana de vizualização para o futuro | botão |
+| Passar para o anterior | O ator pode mudar a vizualização do mês, dia ou semana de vizualização para o passado | botão |
+| Escolher Mês | O ator pode escolher o mês no qual deseja visualizar os eventos | botão do calendário |
+| Expandir Semana | O ator pode expandir a semana na qual deseja vizualizar os eventos | botão do calendário  |
+| Escolher Dia | O ator pode expandir o dia no qual deseja vizualizar os eventos | botão do calendário  |
+| Adicionar evento| O ator pode adicionar um evento temporário ao calendário | botão do calendário  |
+| Remover evento| O ator pode remover um evento de forma temporária do calendário | botão do calendário  |
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá, me chamo Henrique e sou estudante de Ciência da Computação, gostaria de um calendário de eventos interativo no qual eu posso adicionar ou remover eventos, mesmo que de forma temporária, para organização do meu tempo. Também gostaria de ver os eventos futuros do calendário, como feriados, e as datas dos inícios e fins dos períodos de trancamentos e de entregas de documentos em uma tela com bom design e que não seja mais uma forma de ficar cansado com tantas informações.
+```
+### Telas
+**Tela Mobile**
+
+>================================================================================
+## RF07: - Exibir Manual do Aluno - @LuFi-1227
+
+### Autor: @LuFi-1227
+
+## Revisor: @revisor
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Exibe um documento de texto chamado de manual do aluno, que serve para os calouros de Ciência da Computação se adaptarem melhor ao curso.
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Manual do Aluno";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Manual do Aluno" da tela inicial;
+3. O ator consegue visualizar o manual do aluno em sua tela;
+
+### Campos do Formulário:
+
+| Campo | Obrigatório? | Editável? | Formato |
+| --- | --- | --- | --- |
+| --- | --- | --- | --- |
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+| Fazer download | O ator pode fazer download do manual do aluno | botão |
+| Alterar zoom | O ator pode alterar o zoom no manual do aluno | botão |
+| Retornar | O ator pode retornar para a página inicial do aplicativo | Botão |
+
+### Relatório do Usuário:
+
+| Campo | Descrição | Formato |
+| --- | --- | --- |
+| --- | --- | --- |
+
+### Fluxo Alternativo:
+   
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá, me chamo Carlos e sou calouro de Ciência da Computação, gostaria de uma tela na qual eu pudesse ler um documento que contivesse infiormações confiáveis sobre o curso no qual estou começando, tenho problemas visuais e por isto gostaria de conseguir alterar o zoom do documento nesta página e, se possível, fazer download dele no meu celular de forma fácil. 
+```
+### Telas
+**Tela Mobile**
+
+>================================================================================
+## RF08: Redirecionar para o espaço do aluno - @rafaeld74
+
+### Autor: @rafaeld74
+
+## Revisor: @LuFi-1227
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Um botão que redireciona o usuario para a pagina do espaço do aluno que está no site da UFT.
 
 ### Pré-Condição:
 
@@ -248,7 +371,7 @@ Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no b
 
 1. O ator abre o aplicativo ou entra no link da página web;
 2. O ator clica no botão "Espaço do Aluno" da tela inicial;
-3. O ator e re direcionado a pagina do aluno no site da UFT;
+3. O ator e redirecionado para a pagina do aluno no site da UFT;
 
 ### Opções dos Usuários:
 
@@ -262,14 +385,15 @@ Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no b
 
 **Story Telling**
 ```
-Olá me chamo Armano faço ciecia da computação porem eu já tenho 67 anos e tenho dificuldade com a UI da site da UFT e gostaria de ter algum botão de facil acesso que me permetiria ser direcionado diretamente para a pagina do aluno no site da UFT para facilitar o meu acesso.
+Olá me chamo Armano faço ciência da computação, porem eu já tenho 67 anos e tenho dificuldade para encontrar o espaço do aluno da UFT pesquisando no google e gostaria de ter algum botão de que me permitiria ser direcionado diretamente para a pagina do aluno no site da UFT para facilitar o meu acesso.
 ```
 
+>================================================================================
 ## RF09: Editar informações e links do aplicativo - @rafaeld74
 
 ### Autor: @rafaeld74
 
-## Revisor: @revisor
+## Revisor: @LuFi-1227
 
 ### Atores:
 
@@ -277,7 +401,7 @@ Olá me chamo Armano faço ciecia da computação porem eu já tenho 67 anos e t
 
 ### Descrição Sucinta:
 
-A abilidade de alterar as informações e links presentes no aplicativo.
+A habilidade de alterar as informações e links presentes no aplicativo, pelo banco de dados.
 
 ### Pré-Condição:
 
@@ -285,18 +409,17 @@ Estar logado como Administrador e esta na pagina que deseja fazer alterações.
 
 ### Fluxo Principal:
 
-1. O autor deve logar na pagina como administrador.
-2. O autor entra na pagina que ele deseja alterar.
-3. O altor clica no botão que permite que as informaçoes sejam alteradas nessa pagina.
-4. O altor salva suas alteraçoes clicando no botão salvar.
+1. O ator deve logar na pagina como administrador.
+2. O ator entra na pagina que ele deseja alterar.
+3. O ator clica no botão que permite alterar o banco de dados.
+4. O ator salva suas alteraçoes clicando no botão salvar.
 
 ### Opções dos Usuários:
 
 | Opção | Descrição | Atalho |
 | --- | --- | --- |
-| Editar | O usuario clica um botão para liberar a edição da tela | Botão |
-| Salvar | O usuario clica um botão que | Botão |
-| Salvar | O usuario clica um botão que | Botão |
+| Editar | O administrador passa a poder editar o Banco de dados | Botão |
+| Salvar | O administrador clica um botão que possibilita salvar as alterações | Botão |
 | Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
 
 ## User Stories
