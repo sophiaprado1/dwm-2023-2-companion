@@ -26,10 +26,10 @@ Repositório do projeto Bender 2.0 (Companion), como parte da disciplina Desenvo
 >- *RF01*: - Exibir tela principal - @LuFi-1227
 >- *RF02*: - Exibir horários de aula - @LuFi-1227
 >- *RF03*: - Exibir contatos importantes - @LuFi-1227
->- *RF04*: - Exibir estatutos - @author
->- *RF05*: - Exibir fluxogramas - @author
->- *RF06*: - Exibir calendário de eventos - @author
->- *RF07*: - Exibir Manual do Aluno - @author
+>- *RF04*: - Exibir estatutos - @rafaeld74
+>- *RF05*: - Exibir fluxogramas - @rafaeld74
+>- *RF06*: - Exibir calendário de eventos - @LuFi-1227
+>- *RF07*: - Exibir Manual do Aluno - @LuFi-1227
 >- *RF08*: - Redirecionar para o espaço do aluno - @author
 >- *RF09*: - Editar informações e links do aplicativo - @author
 
@@ -347,3 +347,86 @@ Olá, me chamo Carlos e sou calouro de Ciência da Computação, gostaria de uma
 ```
 ### Telas
 **Tela Mobile**
+
+>================================================================================
+## RF08: Redirecionar para o espaço do aluno - @rafaeld74
+
+### Autor: @rafaeld74
+
+## Revisor: @LuFi-1227
+
+### Atores:
+
+> Usuário - Acesso à todas as informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+Um botão que redireciona o usuario para a pagina do espaço do aluno que está no site da UFT.
+
+### Pré-Condição:
+
+Estar com o aplicativo aberto no telefone ou na aba do google e ter clicado no botão "Espaço do Aluno";
+
+### Fluxo Principal:
+
+1. O ator abre o aplicativo ou entra no link da página web;
+2. O ator clica no botão "Espaço do Aluno" da tela inicial;
+3. O ator e redirecionado para a pagina do aluno no site da UFT;
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Redirecionar| O usuario clica um botão que o redireciona a pagina da UFT  | Botão |
+
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Olá me chamo Armano faço ciência da computação, porem eu já tenho 67 anos e tenho dificuldade para encontrar o espaço do aluno da UFT pesquisando no google e gostaria de ter algum botão de que me permitiria ser direcionado diretamente para a pagina do aluno no site da UFT para facilitar o meu acesso.
+```
+
+>================================================================================
+## RF09: Editar informações e links do aplicativo - @rafaeld74
+
+### Autor: @rafaeld74
+
+## Revisor: @LuFi-1227
+
+### Atores:
+
+> Administrador - Acesso à edição das informações contidas no aplicativo;
+
+### Descrição Sucinta:
+
+A habilidade de alterar as informações e links presentes no aplicativo, pelo banco de dados.
+
+### Pré-Condição:
+
+Estar logado como Administrador e esta na pagina que deseja fazer alterações.
+
+### Fluxo Principal:
+
+1. O ator deve logar na pagina como administrador.
+2. O ator entra na pagina que ele deseja alterar.
+3. O ator clica no botão que permite alterar o banco de dados.
+4. O ator salva suas alteraçoes clicando no botão salvar.
+
+### Opções dos Usuários:
+
+| Opção | Descrição | Atalho |
+| --- | --- | --- |
+| Editar | O administrador passa a poder editar o Banco de dados | Botão |
+| Salvar | O administrador clica um botão que possibilita salvar as alterações | Botão |
+| Rolar a página | O usuário pode rolar a página para acessar informações ainda não exibidas | scrol ou deslize|
+
+## User Stories
+
+### Usuário:
+
+**Story Telling**
+```
+Ola meu nome e Jonas e eu sou um administrador do aplicativo e gostaria de poder ter a opção de facilmente alterar os links e as informaçoes presentes no site para garantir que todas estajam atualizadas.
+```
