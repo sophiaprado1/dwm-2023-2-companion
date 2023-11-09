@@ -13,5 +13,12 @@ class control{
         $dado = $data->pullhorarios($periodo, $dia, $horario);
         return $dado;
     }
+
+    public function pullTypeContacts($type){
+        require_once "../../model/Data.php";
+        $data = new data();
+        $dado = $data->pullTypeContacts($type);
+        return $dado;
+    }
 }
 ?>
