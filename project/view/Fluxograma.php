@@ -1,44 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Color Buttons</title>
-    <style>
-        .container {
-            margin: 20px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .color-button {
-            padding: 5px;
-            margin: 2px;
-            cursor: pointer;
-        }
-    </style>
 </head>
+<?php
+    include "./utils/header.html";
+?>
 <body>
-
+<div class="return-button">
+    <a href="./Home.php"><img src="./img/return.png" class="return-img"></a>
+</div>
 <div class="container">
-    <table id="table">
-        <tr>
-            <th>Periodos</th>
-            <th>Materias</th>
-        </tr>
+    <table class="table-flux" id="table">
         <?php
         $buttonInfo = array(
             1 => array("LM", "Lógica Matemática", "#FF5733"),
@@ -94,14 +70,12 @@
         for ($i = 1; $i <= 8; $i++) {
             echo "<tr>";
             echo "<td>$i</td>";
-            echo "<td>";
             for ($j = 1; $j <= ($i == 1 ? 5 : 6); $j++) {
                 $button = $buttonInfo[($i - 1) * 6 + $j];
                 $buttonText = $button[0] . " - " . $button[1];
                 $buttonColor = $button[2];
-                echo "<button class='color-button' data-row='$i' data-info='" . implode(",", $button) . "' style='background-color: $buttonColor;'>$buttonText</button>";
+                echo "<td class='dado-flux'><button class='color-button' data-row='$i' data-info='" . implode(",", $button) . "' style='background-color: $buttonColor;'>$buttonText</button></td>";
             }
-            echo "</td>";
             echo "</tr>";
         }
         ?>
