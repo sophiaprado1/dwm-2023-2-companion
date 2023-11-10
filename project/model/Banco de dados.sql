@@ -38,3 +38,41 @@ insert into horarios(dia, periodo, hora, materia, turma, professor, sala, bloco)
 (4, 1, 1, "Introdução a Ciência da Computação", "Turma B", "Juliana", "Laboratório 104", "Bloco III"),
 (5, 1, 1, "Lógica de Programação", "Turma A", "Juliana", "Laboratório 110", "Bloco III"),
 (5, 1, 1, "Lógica de Programação", "Eng de Alimentos", "Prof. do Câmpus", "Laboratório 104", "Bloco III");
+
+create table tipoDesc(
+	id integer not null auto_increment primary key,
+    descr varchar(45)
+);
+
+create table Contatos(
+	id integer not null auto_increment primary key,
+    tipo integer not null,
+    posição varchar(45) not null,
+    nome varchar(45) not null,
+    telefone varchar(45),
+    email varchar(45) not null
+);
+
+insert into tipoDesc(descr) values
+("Centro Acadêmico"),
+("Professores"),
+("Coordenação"),
+("Ouvidoria"),
+("Secretaria Acadêmica");
+
+ALTER TABLE Contatos ADD CONSTRAINT tipo FOREIGN KEY (tipo) REFERENCES tipoDesc(id);
+
+insert into Contatos(tipo, posição, nome, telefone, email) values
+("1", "Presidente", "Fulano", null, "fulano@mail.uft.edu.br"),
+("2", "Professor", "Beutrano", null, "beutrano@mail.uft.edu.br");
+
+create table users(
+	id integer not null auto_increment primary key,
+	nome varchar(45),
+    usuario varchar(45),
+    senha varchar(45),
+    permissao integer);
+    
+insert into users(nome, usuario, senha, permissao) values
+("Luiz", "LuFi1227", "senha", 0);
+    
