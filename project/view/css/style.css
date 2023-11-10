@@ -130,3 +130,25 @@ table {
     border-style: solid;
     border-radius: 30px;
 }
+
+.mini-links{
+    margin-top: 1%;
+    border-radius: 30px;
+    width: 95%;
+    height: auto;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:none;
+    color: black;
+}
+
+.links{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-decoration:none;
+    width: 95%;
+    height: auto;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
