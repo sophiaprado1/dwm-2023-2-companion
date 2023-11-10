@@ -76,3 +76,15 @@ create table users(
 insert into users(nome, usuario, senha, permissao) values
 ("Luiz", "LuFi1227", "senha", 0);
     
+create table linksUteis(
+	id integer not null auto_increment primary key,
+    links varchar(50) not null,
+    cores varchar(20) not null,
+    titulo varchar(100) not null,
+    descricao varchar(150) not null
+);
+
+insert into linksUteis(links, cores, titulo, descricao) values
+("https://palmas.uft.edu.br/sisma/calendario/", "verde", "Calendário Acadêmico e Administrativo 2023", "Calendário Acadêmico e Administrativo 2023 para os cursos de Graduação e Pós-Graduação da UFT."),
+("https://docs.uft.edu.br/share/s/g9rL9JhXTvqaJrYNErHbQQ", "azul", "Atualização do PPC de Ciência da Computação, Câmpus de Palmas (PPC na pág. 39 do PDF)", "Dispõe sobre a atualização do Projeto Pedagógico do Curso (PPC) de Bacharelado em Ciência da Computação, Câmpus de Palmas.")
+;
