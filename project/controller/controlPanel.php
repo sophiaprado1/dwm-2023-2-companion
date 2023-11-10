@@ -20,5 +20,12 @@ class control{
         $dado = $data->pullTypeContacts($type);
         return $dado;
     }
+
+    public function pulllinks(){
+        require_once "../model/Data.php";
+        $data = new data();
+        $dado = $data->pulllinks();
+        return $dado;
+    }
 }
 ?>
