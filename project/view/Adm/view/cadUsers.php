@@ -6,21 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de novo usuário</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="../../utils/js/jquery.js"></script>  
 </head>
 <body class="body">
     <div class="container">
-        <h1>Tela de Cadastro</h1>
-        <form action="../controller/cadPanel.php" method="post" id="loginForm">
-                <label for=""><strong>Usuario:</strong></label>
-                <input class="entrada" type="text" name="user" placeholder="Nome de Usuário"  required>
-                <label for=""><strong>Senha:</strong></label>
-                <input class="entrada" type="password" name="Pass" placeholder="Senha"  required>
-                <label for=""><strong>Nome:</strong></label>
-                <input class="entrada" type="text" name="name" placeholder="Nome Completo"  required>
-                <label for=""><strong>Email:</strong></label>
-                <input class="entrada" type="email" name="email" placeholder="seuemail@gmail.com" required>
-                <button type="submit">Entrar</button>
-        </form>
+        <select name="opt" class="body-div-input" id="body-div-select" aria-label="Cadastrar">
+            <option selected="0">Selecionar</option>
+            <option value="1">Horários</option>
+            <option value="2">Contatos</option>
+            <option value="3">Links</option>
+            <option value="4">Calendário</option>
+            <option value="5">Cardápio</option>
+            <option value="6">Usuario</option>
+        </select>
+    </div>
+    <div class="container">
+        <div id="form">
+
+        </div>
     </div>
 </body>
 </html>
+<script>
+    var opcao = document.querySelector('[name="opt"]');
+
+    opcao.addEventListener('change',function(){
+        console.log(opcao.value);
+        if(opcao.value == 1){
+            $("#form").load("./utils/CadHorarios.html");
+        }else{
+            if(opcao.value == 2){
+                $("#form").load("./utils/CadContatos.html");
+            }else{
+                if(opcao.value == 3){
+                    $("#form").load("./utils/CadLinks.html");
+                }else{
+                    if(opcao.value == 4){
+                        $("#form").load("./utils/CadCalend.html");
+                    }else{
+                        if(opcao.value == 5){
+                            $("#form").load("./utils/CadCardap.html");
+                        }else{
+                            $("#form").load("./utils/CadUsers.html");
+                        }
+                    }
+                }
+            }
+        }
+        
+    })
+</script>

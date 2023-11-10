@@ -1,5 +1,8 @@
 <?php
     session_start();
+    require "../controller/controlPanel.php";
+    $ctrl = new control();
+    $data = $ctrl->pulllinks();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,6 +19,21 @@
 <body>
     <div class="return-button">
         <a href="./Home.php"><img src="./img/return.png" class="return-img"></a>
+    </div>
+    <div class="container" style="flex-direction: column; border-radius:30px">
+        <?php
+            while($res = mysqli_fetch_assoc($data)){
+                echo "
+                <div class='mini-links' style='background-color:".$res['cores']."'>
+                    <a href='".$res['links']."' style='text-decoration:none;'>
+                        <div class='links'>
+                            <div>".$res['titulo']."</div>
+                            <div>".$res['descricao']."</div>
+                        </div>
+                    </a>
+                </div>";
+            }
+        ?>
     </div>
 </body>
 </html>
