@@ -27,5 +27,12 @@ class control{
         $dado = $data->pulllinks();
         return $dado;
     }
+
+    public function pullCardapio(){
+        require_once "../model/Data.php";
+        $data = new data();
+        $dado = $data->pullCardapio();
+        return $dado;
+    }
 }
 ?>
