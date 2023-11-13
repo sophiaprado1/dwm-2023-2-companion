@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    Hello wordl
+    <div class="container">
+        <h1>Tela de Cadastro</h1>
+        <label for=""><strong>Titulo:</strong></label>
+        <input class="entrada" type="text" name="title" placeholder="Titulo"  required>
+        <label for=""><strong>Descrição:</strong></label>
+        <input class="entrada" type="text" name="desc" placeholder="Descrição" required>
+        <label for=""><strong>Link:</strong></label>
+        <input class="entrada" type="text" name="link" placeholder="Link"  required>
+        <label for=""><strong>Cor:</strong></label>
+        <select name="color" class="entrada">
+            <option selected="0">Cor</option>
+            <option value="aqua"><div style="background-color: aqua;"></div>Aqua</option>
+            <option value="lightskyblue"><div style="background-color: lightskyblue;"></div>Azul</option>
+            <option value="lightgoldenrodyellow"><div style="background-color: lightgoldenrodyellow;"></div>Amarelo</option>
+            <option value="lightsteelblue"><div style="background-color: lightsteelblue;"></div>Azul "Aço"</option>
+            <option value="lightcoral"><div style="background-color: lightcoral;"></div>Coral</option>
+            <option value="lightcyan"><div style="background-color: blue; width: 5px; height: 5px;"></div>Ciano</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+    </div>
 </body>
 </html>

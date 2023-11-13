@@ -11,7 +11,7 @@
 <body class="body">
     <div class="container">
         <select name="opt" class="body-div-input" id="body-div-select" aria-label="Cadastrar">
-            <option selected="0">Selecionar</option>
+            <option selected="3">Selecionar</option>
             <option value="1">Horários</option>
             <option value="2">Contatos</option>
             <option value="3">Links</option>

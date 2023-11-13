@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    Hello wordl
+    <div class="container">
+        <h1>Tela de Cadastro</h1>
+        <label for=""><strong>Tipo:</strong></label>
+        <select name="hour" class="entrada">
+            <option selected="0">Almoço</option>
+            <option value="1">Janta</option>
+        </select>
+        <label for=""><strong>Dia da Semana:</strong></label>
+        <select name="dia" class="entrada">
+            <option selected="0">Domingo</option>
+            <option value="1">Segunda-Feira</option>
+            <option value="2">Terça-Feira</option>
+            <option value="3">Quarta-Feira</option>
+            <option value="4">Quinta-Feira</option>
+            <option value="5">Sexta-Feira</option>
+            <option value="6">Sábado</option>
+        </select>
+        <label for=""><strong>Data:</strong></label>
+        <input class="entrada" type="datetime-local" name="dateend" placeholder="Data"  required>
+        <label for=""><strong>Prato:</strong></label>
+        <input class="entrada" type="text" name="prato" placeholder="Arroz, ..." required>
+        <button type="submit">Cadastrar</button>
+    </div>
 </body>
 </html>
