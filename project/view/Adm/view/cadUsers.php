@@ -29,7 +29,6 @@
 </html>
 <script>
     var opcao = document.querySelector('[name="opt"]');
-
     opcao.addEventListener('change',function(){
         console.log(opcao.value);
         if(opcao.value == 1){
@@ -53,6 +52,5 @@
                 }
             }
         }
-        
-    })
+    });
 </script>

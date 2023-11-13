@@ -1,4 +1,5 @@
 <?php
+//Classe geral do site;
 class control{
     public function pullevents(){
         require_once "../../model/Data.php";

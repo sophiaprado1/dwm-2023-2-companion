@@ -88,3 +88,16 @@ insert into linksUteis(links, cores, titulo, descricao) values
 ("https://palmas.uft.edu.br/sisma/calendario/", "verde", "Calendário Acadêmico e Administrativo 2023", "Calendário Acadêmico e Administrativo 2023 para os cursos de Graduação e Pós-Graduação da UFT."),
 ("https://docs.uft.edu.br/share/s/g9rL9JhXTvqaJrYNErHbQQ", "azul", "Atualização do PPC de Ciência da Computação, Câmpus de Palmas (PPC na pág. 39 do PDF)", "Dispõe sobre a atualização do Projeto Pedagógico do Curso (PPC) de Bacharelado em Ciência da Computação, Câmpus de Palmas.")
 ;
+
+create table cardapioRU(
+	id integer not null auto_increment primary key,
+    dia integer not null,
+    dataDia datetime,
+    prato varchar(355),
+    tipo binary
+    );
+    
+insert into cardapioRU(dia, dataDia, prato, tipo) values
+("1", "30/11/2023", "Arroz, feijão, carne e salada", 0);
+
+select * from cardapioRU;

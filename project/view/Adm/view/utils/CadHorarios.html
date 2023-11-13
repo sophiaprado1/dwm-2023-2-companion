@@ -1,54 +1,110 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Tela de Cadastro</h1>
-        <label for=""><strong>Dia da Semana:</strong></label>
-        <select name="dia" class="entrada">
-            <option selected="0">Domingo</option>
-            <option value="1">Segunda-Feira</option>
-            <option value="2">Terça-Feira</option>
-            <option value="3">Quarta-Feira</option>
-            <option value="4">Quinta-Feira</option>
-            <option value="5">Sexta-Feira</option>
-            <option value="6">Sábado</option>
-        </select>
-        <label for=""><strong>Periodo:</strong></label>
-        <select name="period" class="entrada">
-            <option selected="0">Período</option>
-            <option value="1">1° Período</option>
-            <option value="2">2° Período</option>
-            <option value="3">3° Período</option>
-            <option value="4">4° Período</option>
-            <option value="5">5° Período</option>
-            <option value="6">6° Período</option>
-            <option value="7">7° Período</option>
-            <option value="8">8° Período</option>
-        </select>
-        <label for=""><strong>Horario:</strong></label>
-        <select name="hour" class="entrada">
-            <option selected="0">Nenhum</option>
-            <option value="1">08:00h - 11:40h</option>
-            <option value="2">14:00h - 17:40h</option>
-            <option value="3">19:00h - 22:40h</option>
-        </select>
-        <label for=""><strong>Materia:</strong></label>
-        <input class="entrada" type="text" name="materia" placeholder="Lógica de ..."  required>
-        <label for=""><strong>Turma:</strong></label>
-        <input class="entrada" type="text" name="turma" placeholder="(A, B...)"  required>
-        <label for=""><strong>Professor:</strong></label>
-        <input class="entrada" type="text" name="nome" placeholder="Nome"  required>
-        <label for=""><strong>Sala:</strong></label>
-        <input class="entrada" type="text" name="sala" placeholder="Laboratório 102" required>
-        <label for=""><strong>Bloco:</strong></label>
-        <input class="entrada" type="text" name="bloco" placeholder="Bloco III" required>
-        <button type="submit">Cadastrar</button>
-    </div>
-</body>
-</html>
+<div class="container">
+    <h1>Tela de Cadastro</h1>
+    <label for=""><strong>Dia da Semana:</strong></label>
+    <select name="dia" class="entrada">
+        <option selected="0">Domingo</option>
+        <option value="1">Segunda-Feira</option>
+        <option value="2">Terça-Feira</option>
+        <option value="3">Quarta-Feira</option>
+        <option value="4">Quinta-Feira</option>
+        <option value="5">Sexta-Feira</option>
+        <option value="6">Sábado</option>
+    </select>
+    <label for=""><strong>Periodo:</strong></label>
+    <select name="period" class="entrada">
+        <option selected="0">Período</option>
+        <option value="1">1° Período</option>
+        <option value="2">2° Período</option>
+        <option value="3">3° Período</option>
+        <option value="4">4° Período</option>
+        <option value="5">5° Período</option>
+        <option value="6">6° Período</option>
+        <option value="7">7° Período</option>
+        <option value="8">8° Período</option>
+    </select>
+    <label for=""><strong>Horario:</strong></label>
+    <select name="hour" class="entrada">
+        <option selected="0">Nenhum</option>
+        <option value="1">08:00h - 11:40h</option>
+        <option value="2">14:00h - 17:40h</option>
+        <option value="3">19:00h - 22:40h</option>
+    </select>
+    <label for=""><strong>Materia:</strong></label>
+    <input class="entrada" type="text" name="materia" placeholder="Lógica de ..."  required>
+    <label for=""><strong>Turma:</strong></label>
+    <input class="entrada" type="text" name="turma" placeholder="(A, B...)"  required>
+    <label for=""><strong>Professor:</strong></label>
+    <input class="entrada" type="text" name="nome" placeholder="Nome"  required>
+    <label for=""><strong>Sala:</strong></label>
+    <input class="entrada" type="text" name="sala" placeholder="Laboratório 102" required>
+    <label for=""><strong>Bloco:</strong></label>
+    <input class="entrada" type="text" name="bloco" placeholder="Bloco III" required>
+    <button type="submit" name="btn">Cadastrar</button>
+</div>
+<script>
+    var btn = document.querySelector('[name="btn"]');
+    btn.addEventListener("click",function(){
+
+        var day = document.querySelector('[name="dia"]');
+        var period = document.querySelector('[name="period"]');
+        var hour = document.querySelector('[name="hour"]');
+        var mat = document.querySelector('[name="materia"]');
+        var clas = document.querySelector('[name="turma"]');
+        var name = document.querySelector('[name="nome"]');
+        var room = document.querySelector('[name="sala"]');
+        var local = document.querySelector('[name="bloco"]');
+
+        if(day.value === "Domingo"){
+            alert("Preencha o campo Dia com um dia letivo!");
+        }else{
+            if(period.value === "Período"){
+                alert("Preencha o campo Período com um período válido!");
+            }else{
+                if(hour.value === "Nenhum"){
+                    alert("Preencha o campo Horario!");
+                }else{
+                    if(!mat.value){
+                        alert("Preencha o campo Matéria!");
+                    }else{
+                        if(!clas.value){
+                            alert("Preencha o campo Turma!");
+                        }else{
+                            if(!name.value){
+                                alert("Preencha o campo Professor!");
+                            }else{
+                                if(!room.value){
+                                    alert("Preencha o campo Sala!");
+                                }else{
+                                    if(!local.value){
+                                        alert("Preencha o campo Bloco!");
+                                    }else{
+                                        const obj = {
+                                            flag: 3,
+                                            day: day.value,
+                                            period: period.value,
+                                            hour: hour.value,
+                                            mat: mat.value,
+                                            clas: clas.value,
+                                            name: name.value,
+                                            room: room.value,
+                                            local: local.value
+                                        };
+                                        $.ajax({
+                                            url: '../../../controller/controlPanel3.php',
+                                            type: 'POST',
+                                            data: {data: JSON.stringify(obj)},
+                                            dataType: 'json',
+                                            success: function(data){
+                                                alert("Cadastro feito com sucesso");
+                                            },
+                                        });
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    })
+</script>

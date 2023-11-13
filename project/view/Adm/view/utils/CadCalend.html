@@ -1,31 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Tela de Cadastro</h1>
-        <label for=""><strong>Evento:</strong></label>
-        <input class="entrada" type="text" name="event" placeholder="Semana ..."  required>
-        <label for=""><strong>Data de início:</strong></label>
-        <input class="entrada" type="datetime-local" name="dateinit" placeholder="Data"  required>
-        <label for=""><strong>Data de Fim:</strong></label>
-        <input class="entrada" type="datetime-local" name="dateend" placeholder="Data"  required>
-        <label for=""><strong>Cor:</strong></label>
-        <select name="color" class="entrada">
-            <option selected="0">Cor</option>
-            <option value="aqua"><div style="background-color: aqua;"></div>Aqua</option>
-            <option value="lightskyblue"><div style="background-color: lightskyblue;"></div>Azul</option>
-            <option value="lightgoldenrodyellow"><div style="background-color: lightgoldenrodyellow;"></div>Amarelo</option>
-            <option value="lightsteelblue"><div style="background-color: lightsteelblue;"></div>Azul "Aço"</option>
-            <option value="lightcoral"><div style="background-color: lightcoral;"></div>Coral</option>
-            <option value="lightcyan"><div style="background-color: blue; width: 5px; height: 5px;"></div>Ciano</option>
-        </select>
-        <button type="submit">Cadastrar</button>
-    </div>
-</body>
-</html>
+<div class="container">
+    <h1>Tela de Cadastro</h1>
+    <label for=""><strong>Evento:</strong></label>
+    <input class="entrada" type="text" name="event" placeholder="Semana ..."  required>
+    <label for=""><strong>Data de início:</strong></label>
+    <input class="entrada" type="datetime-local" name="dateinit" placeholder="Data"  required>
+    <label for=""><strong>Data de Fim:</strong></label>
+    <input class="entrada" type="datetime-local" name="dateend" placeholder="Data"  required>
+    <label for=""><strong>Cor:</strong></label>
+    <select name="color" class="entrada">
+        <option selected="0">Cor</option>
+        <option value="aqua"><div style="background-color: aqua;"></div>Aqua</option>
+        <option value="lightskyblue"><div style="background-color: lightskyblue;"></div>Azul</option>
+        <option value="lightgoldenrodyellow"><div style="background-color: lightgoldenrodyellow;"></div>Amarelo</option>
+        <option value="lightsteelblue"><div style="background-color: lightsteelblue;"></div>Azul "Aço"</option>
+        <option value="lightcoral"><div style="background-color: lightcoral;"></div>Coral</option>
+        <option value="lightcyan"><div style="background-color: blue; width: 5px; height: 5px;"></div>Ciano</option>
+    </select>
+    <button type="submit" name="btn">Cadastrar</button>
+</div>
+
+<script>
+    var btn = document.querySelector('[name="btn"]');
+    btn.addEventListener("click",function(){
+        var color = document.querySelector('[name="color"]');
+        var nameEvent = document.querySelector('[name="event"]');
+        var dateinit = document.querySelector('[name="dateinit"]');
+        var dateend = document.querySelector('[name="dateend"]');
+        if(color.value === "Cor"){
+            alert("Preencha o campo Cor!");
+        }else{
+            if(!dateinit.value){
+                alert("Preencha o campo Data de Início!");
+            }else{
+                if(!dateend.value){
+                    alert("Preencha o campo Data de Fim!");
+                }else{
+                    if(!nameEvent.value){
+                        alert("Preencha o campo Evento!");
+                    }else{
+                        const obj = {
+                            flag: 0,
+                            Event: nameEvent.value,
+                            DataIn: dateinit.value,
+                            DataOut: dateend.value,
+                            color: color.value
+                        };
+                        $.ajax({
+                            url: '../../../controller/controlPanel3.php',
+                            type: 'POST',
+                            data: {data: JSON.stringify(obj)},
+                            dataType: 'json',
+                            success: function(data){
+                                alert("Cadastro feito com sucesso");
+                            },
+                        });
+                    }
+                }
+            }
+        }
+    })
+</script>
