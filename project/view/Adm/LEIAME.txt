@@ -1,0 +1,1 @@
+Pasta utilizada apenas para administração (registro de informações) do site.

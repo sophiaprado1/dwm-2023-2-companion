@@ -1,12 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello wordl
-</body>
-</html>
+<div class="container">
+    <h1>Tela de Cadastro</h1>
+    <label for=""><strong>Tipo:</strong></label>
+    <select name="hour" class="entrada">
+        <option selected="0">Selecionar</option>
+        <option value="0">Almoço</option>
+        <option value="1">Janta</option>
+    </select>
+    <label for=""><strong>Dia da Semana:</strong></label>
+    <select name="day" class="entrada">
+        <option selected="0">Domingo</option>
+        <option value="1">Segunda-Feira</option>
+        <option value="2">Terça-Feira</option>
+        <option value="3">Quarta-Feira</option>
+        <option value="4">Quinta-Feira</option>
+        <option value="5">Sexta-Feira</option>
+        <option value="6">Sábado</option>
+    </select>
+    <label for=""><strong>Data:</strong></label>
+    <input class="entrada" type="datetime-local" name="date" placeholder="Data"  required>
+    <label for=""><strong>Prato:</strong></label>
+    <input class="entrada" type="text" name="food" placeholder="Arroz, ..." required>
+    <button type="submit" name="btn">Cadastrar</button>
+</div>
+<script>
+    var btn = document.querySelector('[name="btn"]');
+    btn.addEventListener("click",function(){
+        var day = document.querySelector('[name="day"]');
+        var hour = document.querySelector('[name="hour"]');
+        var date = document.querySelector('[name="date"]');
+        var food = document.querySelector('[name="food"]');
+        if(day.value === "Domingo"){
+            alert("Preencha o campo Dia da Semana com um valor válido!");
+        }else{
+            if(hour.value==="Selecionar"){
+                alert("Preencha o campo Tipo!");
+            }else{
+                if(!date.value){
+                    alert("Preencha o campo Data!");
+                }else{
+                    if(!food.value){
+                        alert("Preencha o campo Prato!");
+                    }else{
+                        const obj = {
+                            flag: 1,
+                            food: food.value,
+                            date: date.value,
+                            hour: hour.value,
+                            day: day.value
+                        };
+                        $.ajax({
+                            url: '../../../controller/controlPanel3.php',
+                            type: 'POST',
+                            data: {data: JSON.stringify(obj)},
+                            dataType: 'json',
+                            success: function(data){
+                                alert("Cadastro feito com sucesso");
+                            },
+                        });
+                    }
+                }
+            }
+        }
+    })
+</script>

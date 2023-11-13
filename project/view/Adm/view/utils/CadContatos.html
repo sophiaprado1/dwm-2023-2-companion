@@ -1,12 +1,68 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello wordl
-</body>
-</html>
+<div class="container">
+    <h1>Tela de Cadastro</h1>
+    <label for=""><strong>Classificação:</strong></label>
+    <select name="type" class="entrada">
+        <option selected="0">Nenhum</option>
+        <option value="1">Centro Acadêmico</option>
+        <option value="2">Professores</option>
+        <option value="3">Coordenação</option>
+        <option value="4">Ouvidoria</option>
+        <option value="5">Secretaria Acadêmica</option>
+    </select>
+    <label for=""><strong>Profissão:</strong></label>
+    <input class="entrada" type="text" name="work" placeholder="Profissão"  required>
+    <label for=""><strong>Nome:</strong></label>
+    <input class="entrada" type="text" name="name" placeholder="Nome Completo"  required>
+    <label for=""><strong>Telefone:</strong></label>
+    <input class="entrada" type="text" name="tel" placeholder="Senha"  required>
+    <label for=""><strong>Email:</strong></label>
+    <input class="entrada" type="email" name="email" placeholder="email@gmail.com" required>
+    <button type="submit" name="btn">Cadastrar</button>
+</div>
+<script>
+    var btn = document.querySelector('[name="btn"]');
+    btn.addEventListener("click",function(){
+        var type = document.querySelector('[name="type"]');
+        var work = document.querySelector('[name="work"]');
+        var name = document.querySelector('[name="name"]');
+        var telephone = document.querySelector('[name="tel"]');
+        var email = document.querySelector('[name="email"]');
+        if(type.value === "Nenhum"){
+            alert("Preencha o campo Classificação!");
+        }else{
+            if(!work.value){
+                alert("Preencha o campo Profissão!");
+            }else{
+                if(!name.value){
+                    alert("Preencha o campo Nome!");
+                }else{
+                    if(!telephone.value){
+                        alert("Preencha o campo Telefone!");
+                    }else{
+                        if(!email.value){
+                            alert("Preencha o campo Email!");
+                        }else{
+                            const obj = {
+                                flag: 2,
+                                Type: type.value,
+                                Work: work.value,
+                                Name: name.value,
+                                Telephone: telephone.value,
+                                Email: email.value
+                            };
+                            $.ajax({
+                                url: '../../../controller/controlPanel3.php',
+                                type: 'POST',
+                                data: {data: JSON.stringify(obj)},
+                                dataType: 'json',
+                                success: function(data){
+                                    alert("Cadastro feito com sucesso");
+                                },
+                            });
+                        }
+                    }
+                }
+            }
+        }
+    })
+</script>
