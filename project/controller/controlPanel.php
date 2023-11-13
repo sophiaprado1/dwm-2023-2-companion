@@ -1,4 +1,5 @@
 <?php
+//Classe geral do site;
 class control{
     public function pullevents(){
         require_once "../../model/Data.php";
@@ -25,6 +26,13 @@ class control{
         require_once "../model/Data.php";
         $data = new data();
         $dado = $data->pulllinks();
+        return $dado;
+    }
+
+    public function pullCardapio(){
+        require_once "../model/Data.php";
+        $data = new data();
+        $dado = $data->pullCardapio();
         return $dado;
     }
 }
