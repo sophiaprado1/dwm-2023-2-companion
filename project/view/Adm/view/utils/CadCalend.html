@@ -38,25 +38,38 @@
                     if(!nameEvent.value){
                         alert("Preencha o campo Evento!");
                     }else{
-                        const obj = {
-                            flag: 0,
+                        var f = 0;
+                        var obj = {
+                            flag: f,
                             Event: nameEvent.value,
                             DataIn: dateinit.value,
                             DataOut: dateend.value,
                             color: color.value
                         };
-                        $.ajax({
-                            url: '../../../controller/controlPanel3.php',
-                            type: 'POST',
-                            data: {data: JSON.stringify(obj)},
-                            dataType: 'json',
-                            success: function(data){
-                                alert("Cadastro feito com sucesso");
-                            },
-                        });
+                        var json = JSON.stringify(obj);
+                        require(json);
                     }
                 }
             }
         }
-    })
+    });
+
+
+    function require(obj){
+        $.ajax({
+            url: '../../../controller/controlPanel3.php',
+            type: 'POST',
+            data: {response: obj},
+            dataType: 'json',
+            complete: function(data) {
+                console.log('complete', data);
+            },
+            error: function() {
+                console.log('error');
+            },
+            success: function(data){
+                alert("Cadastro feito com sucesso");
+            },
+        });
+    }
 </script>
