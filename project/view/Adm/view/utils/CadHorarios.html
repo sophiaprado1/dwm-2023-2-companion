@@ -92,8 +92,14 @@
                                         $.ajax({
                                             url: '../../../controller/controlPanel3.php',
                                             type: 'POST',
-                                            data: {data: JSON.stringify(obj)},
+                                            data: {response: JSON.stringify(obj)},
                                             dataType: 'json',
+                                            complete: function(response) {
+                                                console.log('complete');
+                                            },
+                                            error: function() {
+                                                console.log('error');
+                                            },
                                             success: function(data){
                                                 alert("Cadastro feito com sucesso");
                                             },

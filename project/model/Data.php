@@ -113,5 +113,24 @@ class data{
             return 0;
         }
     }
+
+    public function registerCalendar($eventName, $DataSt, $DataOt, $color){
+        $tablename = "calendar";
+        
+        require_once "Connection.php";
+
+        $connection = new conn();
+        $conn = $connection->connect();
+
+        $query = "INSERT INTO $tablename(title, color, e_start, e_end) VALUES ('$eventName','$color','$DataSt','$DataOt')";
+
+        $result = mysqli_query($conn, $query);
+
+        if($result){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
 }
 ?>
