@@ -100,19 +100,15 @@ if(isset($_POST['response'])){
           $Pass = $vet['Pass'];
           $User = $vet['User'];
           $Email = $vet['Email'];
+          $data = new data();
           if($data->registerUsers($Name,$Pass,$User,$Email)){
             echo json_encode("success");
           }else{
-                echo "error";
+            echo "error";
           } 
-
         break;
     }
 }else{
     echo "erro";
-}
-
-class controlCadaster{
-    
 }
 ?>
