@@ -135,7 +135,7 @@
         48 : 0,
     };
 
-    var preRequisitosBackup = {
+    const preRequisitosBackup = {
         1 : 0,
         2 : 0,
         3 : 0,
@@ -189,34 +189,38 @@
 
     
     const buttons = document.querySelectorAll('.color-button');
-    console.log(buttons);
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             const info = button.dataset.info.split(",");
             const id = info[3];
-            if(preRequisitos[id] == 0){
-                const isBlack = button.style.backgroundColor === 'black';
-                if(isBlack){
-                    preRequisitos[id] = preRequisitosBackup[id];
-                    button.style.backgroundColor = button.dataset.info.split(",")[2];
-                }else{
-                    button.style.backgroundColor = 'black';
-                }
-                
-                for(i = 1; i<=48; i++){
-                    if(preRequisitos[i] != 29){
-                        if(preRequisitos[i] == id){
-                            preRequisitos[i] = 0;
+            const isGray = button.style.backgroundColor === 'gray';
+            if(preRequisitos[id] === 0 || isGray){
+                if(isGray){
+                    for(i = 1; i<=48; i++){
+                        if(id == preRequisitosBackup[i]){
+                            preRequisitos[i] = id;
+                            console.log(preRequisitos);
                         }
-                    }else{
-                        preRequisitos[i] = 30;
                     }
-                    
+                    button.style.backgroundColor = button.dataset.info.split(",")[2];
+                    button.textContent= button.dataset.info.split(",")[0] + ' - ' + button.dataset.info.split(",")[1];
+                }else{
+                    for(i = 1; i<=48; i++){
+                        if(preRequisitos[i] != 29){
+                            if(preRequisitos[i] == id){
+                                preRequisitos[i] = 0;
+                            }
+                        }else{
+                            preRequisitos[i] = 30;
+                        }   
+                    }
+                    button.style.backgroundColor = 'gray';
+                    button.textContent= 'Matéria Concluída';
                 }
                 
                 const code = info[0];
                 const description = info[1];
-                const color = isBlack ? '' : info[2];
+                const color = isGray ? '' : info[2];
 
                 console.log(`Código: ${code}, Descrição: ${description}, Cor: ${color}, Pre-Requisito: ${preRequisitos[id]}`);
             }else{
