@@ -39,18 +39,72 @@ if(isset($_POST['response'])){
             }
         break;
         case 1: //Registro de Cardápio
+          $Food =  $vet['food'];
+          $Date =  $vet['date'];
+          $Hour =  $vet['hour'];
+          $Day =  $vet['day'];
+          $data = new data();
+            if($data->registerCardapio($Food,$Date,$Hour,$Day)){
+                echo json_encode("success");
+            }else{
+                echo "error";
+            }
 
         break;
         case 2: //Registro dos Contatos
+            $Type = $vet['Type'];
+            $Work = $vet['Work'];
+            $Name = $vet['Name'];
+            $Telephone = $vet['Telephone'];
+            $Email = $vet['Email'];
+            $data = new data();
+            if($data->registerContatos($Type,$Work,$Name,$Telephone,$Email)){
+                echo json_encode("success");
+            }else{
+                echo "error";
+            }
 
         break;
         case 3: //Registro dos Horários
+           $Day = $vet['day'];
+           $Period = $vet['period'];
+           $Hour = $vet['hour'];
+           $Mat = $vet['mat'];
+           $Clas = $vet['clas'];
+           $Name = $vet['name'];
+           $Room = $vet['room'];
+           $Local = $vet['local'];
+           $data = new data();
+            if($data->registerHorarios($Day,$Period,$Hour,$Mat,$Clas,$Name,$Room,$Local)){
+                echo json_encode("success");
+            }else{
+                echo "error";
+            }
 
         break;
         case 4: //Registro de Link
+           $Title = $vet['Title'];
+           $Desc = $vet['Desc'];
+           $Link = $vet['link'];
+           $Color = $vet['color'];
+           $data = new data();
+            if($data->registerLinks($Title,$Desc,$Link,$Color)){
+                echo json_encode("success");
+            }else{
+                echo "error";
+            }
 
         break;
         case 5: //Registro de Usuário
+          $Name = $vet['Name'];
+          $Pass = $vet['Pass'];
+          $User = $vet['User'];
+          $Email = $vet['Email'];
+          if($data->registerUsers($Name,$Pass,$User,$Email)){
+            echo json_encode("success");
+          }else{
+                echo "error";
+          } 
 
         break;
     }
