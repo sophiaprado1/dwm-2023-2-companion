@@ -39,7 +39,7 @@
                         $.ajax({
                             url: '../../../controller/controlPanel3.php',
                             type: 'POST',
-                            data: {data: JSON.stringify(obj)},
+                            data: {response: JSON.stringify(obj)},
                             dataType: 'json',
                             success: function(data){
                                 alert("Cadastro feito com sucesso");
