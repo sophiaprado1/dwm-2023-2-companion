@@ -71,7 +71,7 @@
             echo "<tr>";
             echo "<td>$i</td>";
             for ($j = 1; $j <= ($i == 1 ? 5 : 6); $j++) {
-                $button = $buttonInfo[($i - 1) * 6 + $j];
+                $button = array_slice($buttonInfo[($i - 1) * 6 + $j], 0, 3);
                 $buttonText = $button[0] . " - " . $button[1];
                 $buttonColor = $button[2];
                 echo "<td class='dado-flux'><button class='color-button' data-row='$i' data-info='" . implode(",", $button) . "' style='background-color: $buttonColor;'>$buttonText</button></td>";
