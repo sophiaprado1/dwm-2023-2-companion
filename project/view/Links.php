@@ -25,7 +25,7 @@
             while($res = mysqli_fetch_assoc($data)){
                 echo "
                 <div class='mini-links' style='background-color:".$res['cores']."'>
-                    <a href='".$res['links']."' style='text-decoration:none;'>
+                    <a target='_blank' rel='noopener' href=".$res['links']." style='text-decoration:none;'>
                         <div class='links'>
                             <div>".$res['titulo']."</div>
                             <div>".$res['descricao']."</div>
