@@ -10,6 +10,11 @@
     <title>Companion - Horários</title>
     <script type="text/javascript" src="./utils/js/jquery.js"></script>  
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .head{
+            background-color: #C9C9C9;
+        }
+    </style>
 </head>
 <?php
     include "./utils/header.html";
