@@ -17,7 +17,6 @@ body {
     height: 80px;
     box-shadow: 5px 5px 10px #888888;
     align-items: center;
-    background-color: #3575A2;
 }
 
 
@@ -41,8 +40,8 @@ body {
 }
 
 .head-logo{
-    width: 417px;
-    height: 41px;
+    width: auto;
+    height: 70px;
     left: 514px;
     top: 14px;
     margin-right: 28%;
@@ -52,9 +51,24 @@ body {
     width: 72px;
     height: 60px;
 }
+.body-div-preB{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
-.body-div{
+.body-div-buttons{
+    row-gap: 10px;
+    column-gap: 16.6%;
     margin-top: 2%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
 }
 
 #search{
@@ -108,10 +122,8 @@ table {
     border:0;
     align-items: center;
     font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    margin-left: 50px;
-    margin-right: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .container{
@@ -122,6 +134,7 @@ table {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 2%;
 }
 
 #mural{
@@ -176,6 +189,7 @@ table {
 }
 
 .div-menu{
+    width: auto;
     margin-left: 33%;
 }
 
@@ -183,6 +197,7 @@ table {
     font-family: arial;
     margin-left: 1%;
     padding: 0px;
+    z-index: 2;
 }
 
 .menu-img{
@@ -195,7 +210,7 @@ table {
 }
 
 .navigation{
-    background-color: rgba(201, 201, 201,.5);
+    background-color: gray;
     width: 350px;
     height: 100%;
     left: -350px;
@@ -210,7 +225,6 @@ table {
 
 .list-menu{
     position: absolute;
-    top: 60px;
     width: 87%;
     list-style: none;
 }
@@ -223,6 +237,10 @@ table {
 }
 
 .item-menu:hover{
-    background-color: rebeccapurple;
+    border-color: black;
+    border-style: solid;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
     color: white;
 }
