@@ -89,7 +89,6 @@ insert into linksUteis(links, cores, titulo, descricao) values
 ("https://docs.uft.edu.br/share/s/g9rL9JhXTvqaJrYNErHbQQ", "azul", "Atualização do PPC de Ciência da Computação, Câmpus de Palmas (PPC na pág. 39 do PDF)", "Dispõe sobre a atualização do Projeto Pedagógico do Curso (PPC) de Bacharelado em Ciência da Computação, Câmpus de Palmas.")
 ;
 
-drop table cardapioru;
 create table cardapioRU(
 	id integer not null auto_increment primary key,
     dia integer not null,
@@ -99,9 +98,13 @@ create table cardapioRU(
     );
     
 insert into cardapioRU(dia, dataDia, prato, tipo) values
-(1, "2023-11-30", "Arroz, feijão, carne e salada", 0);
-
-select * from cardapioRU;
-
-UPDATE cardapioRU set prato = 'a' WHERE dia = 1 and tipo = 0 and id = 1;
-
+(1, NOW(), "Arroz, feijão, carne e salada", 0),
+(1, NOW(), "Arroz, feijão, carne e salada", 1),
+(2, NOW(), "Arroz, feijão, carne e salada", 0),
+(2, NOW(), "Arroz, feijão, carne e salada", 1),
+(3, NOW(), "Arroz, feijão, carne e salada", 0),
+(3, NOW(), "Arroz, feijão, carne e salada", 1),
+(4, NOW(), "Arroz, feijão, carne e salada", 0),
+(4, NOW(), "Arroz, feijão, carne e salada", 1),
+(5, NOW(), "Arroz, feijão, carne e salada", 0),
+(5, NOW(), "Arroz, feijão, carne e salada", 1);

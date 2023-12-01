@@ -18,8 +18,8 @@
 <div class="return-button">
     <a href="./Home.php"><img src="./img/return.png" class="return-img"></a>
 </div>
-<div class="container">
-    <table class="table-flux" id="table">
+<div class="container" style="overflow-x: auto">
+    <table class="table-flux" id="table" style="overflow-x: auto">
         <?php
         $buttonInfo = array(
             1 => array("LM", "Lógica Matemática", "#ffff00", 1),
@@ -84,6 +84,14 @@
             echo "</tr>";
         }
         ?>
+        <caption style="margin-bottom: 1%;">
+            <strong>Legenda:</strong><br>
+             <button class='color-button' style="background-color: #ffff00; height: auto"><strong>Math:</strong>Matemática</button>
+             <button class='color-button' style="background-color: #009EA4; height: auto"><strong>FC:</strong>Fundamentos da Computação</button>
+             <button class='color-button' style="background-color: #CC3A3A; height: auto"><strong>TC:</strong>Técnologia da Computação</button>
+             <button class='color-button' style="background-color: #FFFFFF; height: auto"><strong>OPT:</strong>Optativas</button>
+             <button class='color-button' style="background-color: #981C9A; height: auto"><strong>CSP:</strong>Contexto Social e Profissional</button>
+        </caption>
     </table>
 </div>
 
