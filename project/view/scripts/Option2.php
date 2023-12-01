@@ -7,7 +7,7 @@
 ?>
 <div class="container" style="margin-top: 7px;">
     <select name="opt2" class="body-div-input" id="body-div-select" aria-label="">
-        <option selected="0"><?echo $vet['descr']; ?></option>
+        <option selected="0">Pessoa</option>
         <?php
             $i = 1;
             while($data = mysqli_fetch_assoc($vet)){
@@ -35,14 +35,16 @@
         opcao2.addEventListener('change',function(){
                 console.log(vetor);
                 console.log(opcao2.value);
-                $.ajax({
-                url: './scripts/CardPessoa.php',
-                type: 'POST',
-                data: vetor[opcao2.value],
-                dataType: 'html',
-                success: function(data){
-                    $("#Pessoa").html(data);
-                },
-            });
+                if(opcao2.value != "Pessoa"){
+                    $.ajax({
+                    url: './scripts/CardPessoa.php',
+                    type: 'POST',
+                    data: vetor[opcao2.value],
+                    dataType: 'html',
+                    success: function(data){
+                        $("#Pessoa").html(data);
+                    },
+                });
+            }
         })
 </script>

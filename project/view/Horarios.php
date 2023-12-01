@@ -36,8 +36,8 @@
             <option value="8">8° Período</option>
         </select>
     </div>
-    <div class="container">
-        <div class="body-div" id="table">
+    <div class="container" style="overflow-x: auto">
+        <div class="body-div" id="table" >
             
         </div>
     </div>
