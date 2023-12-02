@@ -25,7 +25,7 @@
                 <a href="./Horarios.php"><button class="button" style="background-color: #5CB1FF;">Horários</button></a>
             </span>
             <span>
-                <a href="./Contatos.php"><button class="button" style="background-color: #7389FF;">Contatos</button></a>
+                 <a href="./Contatos.php"><button class="button" style="background-color: #7389FF;">Contatos</button></a>
             </span>
             <span>
                 <a href="./Fluxograma.php"><button class="button" style="background-color: #535252;">Fluxograma</button></a>

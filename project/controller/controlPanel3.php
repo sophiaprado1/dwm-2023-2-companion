@@ -27,24 +27,27 @@ if(isset($_POST['response'])){
 
     switch($vet['flag']){
         case 0: //Registro de calendário
+            $data = new data();
             $eventName = $vet['Event'];
             $DataSt = $vet['dataIn'];
+            $novaDataSt = $data->converterFormatoData($DataSt);
             $DataOt = $vet['dataOut'];
+            $novaDataOt = $data->converterFormatoData($DataOt);
             $color = $vet['color'];
-            $data = new data();
-            if($data->registerCalendar($eventName, $DataSt, $DataOt, $color)){
+            if($data->registerCalendar($eventName, $novaDataSt, $DataOt, $color)){
                 echo json_encode("success");
             }else{
                 echo "error";
             }
         break;
         case 1: //Registro de Cardápio
+          $data = new data();
           $Food =  $vet['food'];
           $Date =  $vet['date'];
+          $novaData = $data->converterFormatoData($Date);
           $Hour =  $vet['hour'];
           $Day =  $vet['day'];
-          $data = new data();
-            if($data->registerCardapio($Food,$Date,$Hour,$Day)){
+            if($data->registerCardapio($Food,$novaData,$Hour,$Day)){
                 echo json_encode("success");
             }else{
                 echo "error";
