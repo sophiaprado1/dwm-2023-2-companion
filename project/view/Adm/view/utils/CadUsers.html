@@ -1,0 +1,65 @@
+<div class="container">
+    <h1>Tela de Cadastro</h1>
+    <label for=""><strong>Usuario:</strong></label>
+    <input class="entrada" type="text" name="user" placeholder="Nome de Usuário"  required>
+    <label for=""><strong>Senha:</strong></label>
+    <input class="entrada" type="password" name="Pass" placeholder="Senha"  required>
+    <label for=""><strong>Nome:</strong></label>
+    <input class="entrada" type="text" name="name" placeholder="Nome Completo"  required>
+    <label for=""><strong>Email:</strong></label>
+    <input class="entrada" type="email" name="email" placeholder="seuemail@gmail.com" required>
+    <button type="submit" name="btn">Cadastrar</button>
+</div>
+<script>
+    var btn = document.querySelector('[name="btn"]');
+    btn.addEventListener("click",function(){
+        var name = document.querySelector('[name="name"]');
+        var pass = document.querySelector('[name="Pass"]');
+        var user = document.querySelector('[name="user"]');
+        var email = document.querySelector('[name="email"]');
+        if(!name.value){
+            alert("Preencha o campo Nome corretamente!");
+        }else{
+            if(!pass.value){
+                alert("Preencha o campo Senha corretamente!");
+            }else{
+                if(!user.value){
+                    alert("Preencha o Nome de usuário corretamente!");
+                }else{
+                    if(!email.value){
+                        alert("Preencha o campo Email corretamente!");
+                    }else{
+                        var f = 5;
+                        const obj = {
+                            flag: f,
+                            Name: name.value,
+                            Pass: pass.value,
+                            User: user.value,
+                            Email: email.value
+                        };
+                        var json = JSON.stringify(obj);
+                        require(json);
+                    }
+                }
+            }
+        }
+    });
+
+    function require(obj){
+        $.ajax({
+            url: '../../../controller/controlPanel3.php',
+            type: 'POST',
+            data: {response: obj},
+            dataType: 'json',
+            complete: function(data) {
+                console.log('complete', data);
+            },
+            error: function() {
+                console.log('error');
+            },
+            success: function(data){
+                alert("Cadastro feito com sucesso");
+            },
+        });
+    }
+</script>

@@ -1,7 +1,5 @@
 <?php
-
-use control as GlobalControl;
-
+//Classe usada para logar na Área do Administrador;
 if(isset($_POST['login'])){
     if($_POST['login']==1){
         $user = $_POST['user'];

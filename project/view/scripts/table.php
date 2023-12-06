@@ -3,11 +3,10 @@
     require "../../controller/controlPanel.php";
     $ctrl = new control();
 ?>
-<table border="1" width=100%>
+<table width=100% border="1px solid black" style="border-collapse: collapse;">
 <tbody>
     <tr>
         <th>Horário</th>
-        <th>Domingo</th>
         <th>Segunda-feira</th>
         <th>Terça-feira</th>
         <th>Quarta-feira</th>
@@ -29,7 +28,7 @@
     ];
     for($i=1; $i<=3; $i++){
         echo "<tr> <th>".$vet[$i]."</th>";
-        for($j = 0; $j<=6; $j++){
+        for($j = 1; $j<=6; $j++){
             $data = $ctrl->pullhorario($period, $j, $i);
             if(mysqli_num_rows($data)!=0){
                 echo "<td>";

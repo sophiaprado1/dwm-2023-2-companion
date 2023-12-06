@@ -10,6 +10,11 @@
     <title>Companion - Horários</title>
     <script type="text/javascript" src="./utils/js/jquery.js"></script>  
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .head{
+            background-color: #5CB1FF;
+        }
+    </style>
 </head>
 <?php
     include "./utils/header.html";
@@ -31,8 +36,8 @@
             <option value="8">8° Período</option>
         </select>
     </div>
-    <div class="container">
-        <div class="body-div" id="table">
+    <div class="container" style="overflow-x: auto">
+        <div class="body-div" id="table" >
             
         </div>
     </div>

@@ -125,3 +125,4 @@ Para clonar o projeto, execute o seguinte comando:
 
 ```bash
   git clone https://github.com/sophiaprado1/dwm-2023-2-companion.git
+```
