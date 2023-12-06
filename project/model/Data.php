@@ -233,5 +233,17 @@ class data{
             return 0;
         }
     }
+
+    function converterFormatoData($dataNoFormatoDDMMAAAA) {
+        
+        list($dia, $mes, $ano) = explode('/', $dataNoFormatoDDMMAAAA);
+    
+        
+        $novaDataFormatada = sprintf('%04d/%02d/%02d', $ano, $mes, $dia);
+    
+        return $novaDataFormatada;
+    }
+    
+    
 }
 ?>
