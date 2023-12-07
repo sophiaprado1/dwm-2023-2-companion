@@ -8,7 +8,7 @@ DISCENTES: (Ordem Alfabética)
 > Antonio André Barcelos Chagas - OP
 > Luiz Filipe de Souza Alves - OP
 > Victor Emanuel da Silva Campelo - Frontend
-> Maria Herminia Okuendo - Frontend
+> Maria Herminia da Silva Rodriguez Oquendo - Frontend
 > Rafael de Oliveira Ribeiro - Backend
 > Murilo Estêvão Passos - Backend
 ```
