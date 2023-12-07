@@ -13,11 +13,6 @@
     <script src='./scripts/Calendar/dist/index.global.min.js'></script>
     <script src='./scripts/Calendar/packages/core/locales-all.global.min.js'></script>
     <script src="./scripts/calendar.js"></script>
-    <style>
-        .head{
-            background-color: #FFCC68;
-        }
-    </style>
 </head>
 <?php
     include "./utils/header.html";
