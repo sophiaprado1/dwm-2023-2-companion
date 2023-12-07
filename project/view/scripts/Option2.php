@@ -20,7 +20,7 @@
 </div>
 <div class="container" style="margin-top: 7px; font-family: Arial, Helvetica, sans-serif; font-size:18px;">
     <div id="Fix" style="background-color: white; width: 95%; height:max-content; text-align:left; margin-top:7px; border-radius:30px;">
-        <div id="Pessoa" style="margin-left: 2%;">
+        <div id="Pessoa" style="margin-left: 35px;">
         
         </div>
     </div>
