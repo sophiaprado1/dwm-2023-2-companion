@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Color Buttons</title>
-    <style>
-        .head{
-            background-color: #C9C9C9;
-        }
-    </style>
 </head>
 <?php
     include "./utils/header.html";

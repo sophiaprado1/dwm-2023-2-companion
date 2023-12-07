@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./utils/js/jquery.js"></script>  
     <title>Companion - Contatos</title>
-    <style>
-        .head{
-            background-color: #7389FF;
-        }
-    </style>
 </head>
 <?php
     include "./utils/header.html";
