@@ -12,28 +12,44 @@
 </head>
 <?php
     include "./utils/header.html"; //Para alterar algo da barra header, vá para o arquivo chamado header.php em ./utils
+
+    function botao_img($name, $img) {
+        include "./utils/botaohome.php";
+    }
 ?>
 <body>
     <div class="body-div-preB">
         <div class="body-div-buttons">
             
             <span>
-                <a href="./Horarios.php"><button class="button" style="background-image: url(./img/buttons/horarios.png);"><div>Horários</div></button></a>
+                <a href="./Horarios.php">
+                    <?php botao_img("Horários", "./img/buttons/horarios.png"); ?>
+                </a>
             </span>
             <span>
-                <a href="./Contatos.php"><button class="button" style="background-image: url(./img/buttons/contatos.png);">Contatos</button></a>
+                <a href="./Contatos.php">
+                    <?php botao_img("Contatos", "./img/buttons/contatos.png"); ?>
+                </a>
             </span>
             <span>
-                <a href="./Fluxograma.php"><button class="button" style="background-image: url(./img/buttons/fluxograma.png);">Fluxograma</button></a>
+                <a href="./Fluxograma.php">
+                    <?php botao_img("Fluxograma", "./img/buttons/fluxograma.png"); ?>
+                </a>
             </span>
             <span>
-                <a href="./Links.php"><button class="button" style="background-image: url(./img/buttons/links.png);">Links úteis</button></a>
+                <a href="./Links.php">
+                    <?php botao_img("Links Úteis", "./img/buttons/links.png"); ?>
+                </a>
             </span>
             <span>
-                <a href="./Calendario.php"><button class="button" style="background-image: url(./img/buttons/calendario.png);">Calendário</button></a>
+                <a href="./Calendario.php">
+                    <?php botao_img("Calendário", "./img/buttons/calendario.png"); ?>
+                </a>
             </span>
             <span>
-                <a href="https://ww2.uft.edu.br/index.php/aluno" target="_blank"><button class="button" style="background-image: url(./img/buttons/espaco_aluno.png);">Espaço do Aluno</button></a>
+                <a href="https://ww2.uft.edu.br/index.php/aluno" target="_blank">
+                    <?php botao_img("Espaço do Aluno", "./img/buttons/espaco_aluno.png"); ?>
+                </a>
             </span>
         </div>
     </div>
