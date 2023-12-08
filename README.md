@@ -1,13 +1,12 @@
 # Companion
 
 **Projeto desenvolvido por:**
-- [Sophia Ribeiro Prado](https://github.com/sophiaprado1) - Líder
-- [Antonio André Barcelos Chagas](https://github.com/andrebarceloschagas) - OP
-- [Luiz Filipe de Souza Alves](https://github.com/LuFi-1227) - OP
+- [Luiz Filipe de Souza Alves](https://github.com/LuFi-1227) - Líder
+- [Sophia Ribeiro Prado](https://github.com/sophiaprado1) - OP
+- [Jeová de Sousa Barbosa](https://github.com/jeovasb00) - OP
 - [Victor Emanuel da Silva Campelo](https://github.com/Victorcampelo14) - Frontend
 - [Maria Herminia da Silva Rodriguez Oquendo](https://github.com/offmatt) - Frontend
 - [Rafael de Oliveira Ribeiro](https://github.com/rafaeld74) - Backend
-- [Murilo Estêvão Passos](https://github.com/) - Backend
 
 **Sob a supervisão de:**
 - [Marcelo Ribeiro](https://github.com/ticblaster) - Professor
