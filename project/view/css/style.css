@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
     background-color: #EAE8E8;
     text-align: center;
-    display: block;
     justify-content: space-evenly;
     align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -38,6 +37,7 @@ body {
     height: 48px;
     position: sticky;
     left: 90%;
+    padding-right: 3%;
 }
 
 .return-button {
@@ -53,25 +53,23 @@ body {
 
 .body-div-preB {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 40px 0;
 }
 
 .body-div-buttons {
     height: 100%;
-    row-gap: 10px;
-    column-gap: 10px;
-    margin-top: 2%;
-    margin-left: 25%;
+    gap: 33px;
+    margin: auto;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
+    grid-template-columns: auto auto;
+    padding: auto 0;
+    border-radius: 3px ;
 }
 
 #search {
@@ -124,15 +122,13 @@ table {
     height: 100px;
     border-radius: 3px;
     border: 0;
-    display: flex;
+    display: grid;
     align-items: end;
     font-size: 16.5px;
     background-size: cover;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    word-wrap: break-word;
-
 }
 
 .container {
@@ -246,5 +242,17 @@ table {
         border-left: 1px;
         border-right: 1px;
         color: white;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1100px) {
+    .body-div-buttons {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    .body-div-buttons {
+        grid-template-columns: auto auto auto auto auto auto;
     }
 }
