@@ -44,7 +44,7 @@
 
     <div class="container">
         <div class="body-div" id="mural">
-            Informação;
+            <img style="width:100%; height: 100%; border-radius: 30px; "src="img/mural.jpg"/>
         </div>
     </div>
 </body>
