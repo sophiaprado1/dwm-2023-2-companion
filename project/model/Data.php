@@ -234,6 +234,25 @@ class data{
         }
     }
 
+    public function registerPhotos($Photo){
+        $tablename = "fotos";
+        
+        require_once "Connection.php";
+
+        $connection = new conn();
+        $conn = $connection->connect();
+
+        $query = "INSERT INTO $tablename(nome) VALUES ('$Photo')";
+
+        $result = mysqli_query($conn, $query);
+
+        if($result){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
     function converterFormatoData($dataNoFormatoDDMMAAAA) {
         
         list($dia, $mes, $ano) = explode('/', $dataNoFormatoDDMMAAAA);

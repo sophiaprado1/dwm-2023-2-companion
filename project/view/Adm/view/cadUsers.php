@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de novo usuário</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./utils/js/jquery.js"></script>  
+    <script type="text/javascript" src="./utils/js/jquery.js"></script>
+    <script type="text/javascript" src="./utils/js/FileSaver.min.js.map"></script> 
+    <script type="text/javascript" src="./utils/js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="./utils/js/FileSaver.js"></script> 
 </head>
 <body class="body">
     <div class="container">
@@ -18,6 +21,7 @@
             <option value="4">Calendário</option>
             <option value="5">Cardápio</option>
             <option value="6">Usuario</option>
+            <option value="7">Mural</option>
         </select>
     </div>
     <div class="container">
@@ -46,7 +50,11 @@
                         if(opcao.value == 5){
                             $("#form").load("./utils/CadCardap.html");
                         }else{
-                            $("#form").load("./utils/CadUsers.html");
+                            if(opcao.value == 6){
+                                $("#form").load("./utils/CadUsers.html");
+                            }else{
+                                $("#form").load("./utils/Mural.php");
+                            }
                         }
                     }
                 }

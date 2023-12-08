@@ -33,7 +33,7 @@
             if(mysqli_num_rows($data)!=0){
                 echo "<td>";
                 while ($res = $data->fetch_assoc()){
-                    echo "<div style='background-color:gray'>".$res['materia']."</div><div>".$res['turma']."</div><div> Docente:". $res['professor']."</div><div>".$res['sala']." do ".$res['bloco']."</div>";
+                    echo "<div style='background-color:#5CB1FF'>".$res['materia']."</div><div>".$res['turma']."</div><div> Docente:". $res['professor']."</div><div>".$res['sala']." do ".$res['bloco']."</div>";
                 }
                 echo "</td>";
             }else{

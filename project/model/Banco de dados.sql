@@ -108,3 +108,8 @@ insert into cardapioRU(dia, dataDia, prato, tipo) values
 (4, NOW(), "Arroz, feijão, carne e salada", 1),
 (5, NOW(), "Arroz, feijão, carne e salada", 0),
 (5, NOW(), "Arroz, feijão, carne e salada", 1);
+
+create table fotos(
+    id integer not null auto_increment primary key,
+    nome varchar(220)
+);
